@@ -7,3 +7,14 @@
     --hef:#010440;
     --cx:#03178C;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8;
+}
