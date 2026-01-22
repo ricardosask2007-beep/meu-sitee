@@ -18,3 +18,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8;
 }
+
+header, footer{
+    background-color: var(--hef);
+}
+
+main {
+    background-color: var(--bag);
+}
+
+section#princ {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+
+}
