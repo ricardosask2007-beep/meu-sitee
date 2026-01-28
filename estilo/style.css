@@ -22,7 +22,7 @@ body {
 header, footer{
     background-color: var(--hef);
     height: 50px;
-    width: 100vw;
+    
 }
 
 header {
@@ -41,7 +41,6 @@ header a {
     padding: 12px 20px;
     border-radius: 5px;
     transition: background-color .5s, color .5s;
-    
     
 }
 
@@ -83,6 +82,7 @@ section#caixas {
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.322);
     grid-column: 2;
+    
 }
 
 .trab h3 {
@@ -96,4 +96,92 @@ section#caixas {
     font-size: 1em;
     padding: 5px 10px;
 }
+
+section#orca {
+    background-color: #ffffff75;
+    grid-column: 2;
+    color: var(--hef);
+    margin-top: 100px ;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+}
+
+section#orca div.frs {
+    text-align: center;
+    color: var(--cx);
+    grid-column: 2;
+    padding: 10px 0 20px 0;
+}
+
+section#orca div.pq {
+    text-align: start;
+    grid-column: 2;
+}
+
+section#orca div.pq p.subt {
+    color: var(--bag);
+}
+
+section#orca div.pq h2 {
+    padding-left: 5px;
+}
+
+section#orca div.pq h2 span {
+    color: var(--text);
+}
+
+section#orca div.pq p.obs {
+    text-align: justify;
+    padding: 10px;
+}
+
+section#obss {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+section#obss div.cust {
+    background: linear-gradient(135deg, #010440, #03178c);
+    padding: 12px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    border-radius: 10px; 
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+    transition: 0.3s ease;
+}
+
+div.cust a{
+    color: var(--text);
+    text-decoration: none;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+div.cust:hover {
+    background: linear-gradient(135deg, #03178C, #034AA6);
+    transform: translateY(-2px);
+    
+}
+
+footer {
+  
+  text-align: center;
+  padding: 15px 10px;
+}
+
+footer p {
+    color: var(--text);
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
 
