@@ -98,12 +98,12 @@ section#caixas {
 }
 
 section#orca {
-    background-color: #ffffff75;
+    background-color: rgba(3, 74, 166, 0.116);
     grid-column: 2;
-    color: var(--hef);
+    color: var(--cx);
     margin-top: 100px ;
     text-align: center;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.479);
     border-radius: 20px;
     display: grid;
     grid-template-columns: 15px auto 15px;
@@ -111,7 +111,7 @@ section#orca {
 
 section#orca div.frs {
     text-align: center;
-    color: var(--cx);
+    color: var(--text);
     grid-column: 2;
     padding: 10px 0 20px 0;
 }
@@ -122,11 +122,12 @@ section#orca div.pq {
 }
 
 section#orca div.pq p.subt {
-    color: var(--bag);
+    color: var(--cx);
 }
 
 section#orca div.pq h2 {
     padding-left: 5px;
+    color: var(--hef);
 }
 
 section#orca div.pq h2 span {
@@ -136,6 +137,7 @@ section#orca div.pq h2 span {
 section#orca div.pq p.obs {
     text-align: justify;
     padding: 10px;
+    color: var(--text);
 }
 
 section#obss {
