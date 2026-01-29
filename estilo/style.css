@@ -16,7 +16,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.8;
+    font-size: 1rem;
 }
 
 header, footer{
@@ -67,12 +67,21 @@ section#princ {
   text-align: center;
 }
 
+section#princ h2 {
+  margin-bottom: 15px;
+}
+
+section#princ p {
+  margin-top: 10px;
+}
+
+
 section#caixas {
     cursor: pointer;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     text-align: center;
-    grid-template-columns: auto 90vw auto;
     margin: 5px;
     
 }
@@ -97,6 +106,14 @@ section#caixas {
     padding: 5px 10px;
 }
 
+.trab {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.trab:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
 section#orca {
     background-color: rgba(3, 74, 166, 0.116);
     grid-column: 2;
@@ -114,6 +131,7 @@ section#orca div.frs {
     color: var(--text);
     grid-column: 2;
     padding: 10px 0 20px 0;
+    text-decoration: underline;
 }
 
 section#orca div.pq {
@@ -187,4 +205,39 @@ footer p {
   opacity: 0.85;
 }
 
+@media screen and (min-width: 768px) {
+
+  /* ===== CONTAINER GERAL ===== */
+  section {
+    padding: 60px 20px;
+  }
+
+  /* ===== TÍTULOS ===== */
+  h2.principaltxt {
+    font-size: 2rem;
+  }
+
+  section#orca div.frs h2 {
+    font-size: 1.8rem;
+  }
+
+  /* ===== CAIXAS / SERVIÇOS ===== */
+  section#caixas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .trab {
+    grid-column: auto;
+  }
+
+  /* ===== POR QUE NÓS ===== */
+  section#orca {
+    max-width: 900px;
+    margin: 100px auto 0 auto;
+  }
+}
 
