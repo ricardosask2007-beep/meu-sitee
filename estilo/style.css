@@ -119,6 +119,7 @@ section#orca div.frs {
 section#orca div.pq {
     text-align: start;
     grid-column: 2;
+    padding: 30px 0;
 }
 
 section#orca div.pq p.subt {
@@ -143,7 +144,7 @@ section#orca div.pq p.obs {
 section#obss {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 section#obss div.cust {
